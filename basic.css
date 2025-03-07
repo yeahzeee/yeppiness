@@ -2,7 +2,7 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 /*reset*/
-body {
+html, body {
 	font: normal 14px 'NanumSquare', Arial, sans-serif; 
 	font-weight: 400; /* Regular(400), Bold(700), Extra Bold(800), Light(300) */
 	line-height: 1.4;
@@ -10,6 +10,7 @@ body {
 	background-color: #fff;
 	margin: 0;
 	padding: 0;
+	max-width:1280px;
 }
 h1, h2, h3, h4, h5, h6 {font-size:1em;}
 h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
@@ -31,7 +32,7 @@ em {font-style: normal;}
 nav {display: inline-block;}
 ul.gnb {font-size: 0; font-weight: 800;}
 ul.gnb > li {display: center;}
-ul.gnb > li:hover > ul.lnb {height: 276px;}
+ul.gnb > li:hover > ul.lnb {height: 200px;}
 ul.gnb > li > a {position: relative; display: inline-block; line-height: 80px; font-size: 23px; margin: 0 32px;}
 ul.gnb > li > a::after {position: absolute; bottom: 20px; left: -1px; content: ''; display: block; width: 0; height: 2px; background-color: #F5A9E1; transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);}
 ul.gnb > li:hover > a::after {width: calc(100% + 2px);}
