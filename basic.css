@@ -11,6 +11,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	max-width:1280px;
+	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {font-size:1em;}
 h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
@@ -77,10 +78,13 @@ p.page_info {margin-bottom: 25px; color: #333; line-height: 32px; font-size: 20p
 /* main */
 
 	
-.contents.main {min-width: 1100px;}
+.contents.main {max-width: 1100px;}
 .main_contents {padding:  150px 120px;}
-#slide {width:100%; padding: 0 15vw; position: relative; margin:1vw 0 0 0;}
+main{ width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 10px;}
+#slide {width:100%; padding: 0 15vw; position: relative; margin:1vw 0 0 0; overflow: visible; max-width: 1100px;}
 #slide i{font-size: 30px; color:#000;}
+#slide .slider span img { width: 100%; height: auto; object-fit: contain; max-height: 500px;
+}
 #slide .slider-container {width: 100%; overflow: hidden; border-radius: 15px;}
 #slide .slider-container span{position: absolute; z-index: 99; top:50%; cursor: pointer;}
 #slide .slider-container.leftBtn{padding:10; border-radius:50%; cursor:pointer;}
